@@ -1,0 +1,26 @@
+{
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "access_key": "AKIAI4BDFALLQVZGBOUA",
+        "secret_key": "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",
+        "region": "us-east-1",
+        "source_ami": "ami-0a313d6098716f372",
+        "ssh_username": "ubuntu",
+        "instance_type": "t2.micro",
+        "ami_name": "RestartTest",
+        "vpc_id": "vpc-913abdeb",
+        "subnet_id": "subnet-5a423374",
+        "security_group_id": "sg-0119cf81b9653a576",
+        "ssh_keypair_name": "dockerproject",  
+        "ssh_private_key_file":"~/.ssh/dockerproject.pem"
+      }
+    ],
+  
+    "provisioners": [
+      {
+        "type": "shell",
+        "script": "apacheinstall.sh"
+      }
+    ]
+  }
