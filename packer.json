@@ -8,7 +8,7 @@
         "source_ami": "ami-0a313d6098716f372",
         "ssh_username": "ubuntu",
         "instance_type": "t2.micro",
-        "ami_name": "jenkinstester",
+        "ami_name": "jenkinstest",
         "vpc_id": "vpc-913abdeb",
         "subnet_id": "subnet-5a423374",
         "security_group_id": "sg-0119cf81b9653a576",
